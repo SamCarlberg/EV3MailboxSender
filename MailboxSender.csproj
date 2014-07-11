@@ -8,8 +8,8 @@
     <ProjectGuid>{95F1547C-7FA7-4854-A8F2-2533AD9E5E04}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestApplication</RootNamespace>
-    <AssemblyName>TestApplication</AssemblyName>
+    <RootNamespace>MailboxSender</RootNamespace>
+    <AssemblyName>MailboxSender</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ReleaseVersion>1.6</ReleaseVersion>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -87,6 +87,11 @@
     <Compile Include="ISensor.cs" />
     <Compile Include="IVehicle.cs" />
     <Compile Include="Network.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Utilities.cs" />
     <Compile Include="commands.cs" />
     <Compile Include="connection.cs" />
@@ -133,6 +138,10 @@
     </None>
     <None Include="hidapi.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="TestApplication_TemporaryKey.pfx" />
   </ItemGroup>

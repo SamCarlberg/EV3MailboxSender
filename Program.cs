@@ -17,7 +17,6 @@ public static class Program
         Console.WriteLine("Starting C# backend");
         String input = "";
         connect();
-        Console.WriteLine("connected");
         while (true)
         {
             input = Console.In.ReadLine();
@@ -140,7 +139,6 @@ public static class Program
             Console.WriteLine("connected");
             return;
         }
-        Console.WriteLine("disconnected");
         Console.WriteLine("could not connect");
     }
 }
